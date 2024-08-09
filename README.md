@@ -15,7 +15,7 @@
 
   ## Main Decoder 
 
-
+  ![image](https://github.com/user-attachments/assets/ad286be4-9cf5-42e6-9955-996cc8585339)
 
   ## ALU Decoder 
 
