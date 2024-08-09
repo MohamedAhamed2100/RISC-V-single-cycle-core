@@ -7,6 +7,7 @@
 
 # simulation result in modelsim 
 
+![Capture](https://github.com/user-attachments/assets/ffe7bcc5-428a-45e6-9bc8-3946fe2c96a1)
 
 
 
