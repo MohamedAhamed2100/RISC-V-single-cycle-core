@@ -10,7 +10,7 @@
 
   ## Control Unit 
   
-  ![Capture1](https://github.com/user-attachments/assets/f4b1cee9-9338-4e06-a729-c602b018c924)
+  ![Capture1](https://github.com/user-attachments/assets/c5fc4bf4-a218-4625-b178-e9d0be3e5bc6)
 
   ## ALU Decoder 
 
