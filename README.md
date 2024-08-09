@@ -2,7 +2,8 @@
 
   ## implemented Architeture 
   
-  ![phpdEw2W1](https://github.com/user-attachments/assets/55cd774c-676e-4f7c-af00-d3840ec959f6)
+  ![Capture12](https://github.com/user-attachments/assets/407e13bf-218a-4661-a18d-26c881c8a3aa)
+
 
   ## RISC V Instruction 
   
