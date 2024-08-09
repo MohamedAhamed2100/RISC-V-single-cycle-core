@@ -26,7 +26,7 @@
 
 ![Capture](https://github.com/user-attachments/assets/ffe7bcc5-428a-45e6-9bc8-3946fe2c96a1)
 
-# RISC-V assembly instructuion used for test 
+# RISC-V assembly instructuion used for testing 
        
         if successful , it should write the value 71 to address 48
         Assembly                 description                                             address Machine Code (in hexadecimal and increase by four)        
