@@ -24,6 +24,9 @@ module ALU(
     output reg         zero,
     output reg [31:0]  ALUResult  
  );
+ 
+    wire overflow,lessthan , C_out ; 
+	
     always @ (ALUcontrol or Src_A or Src_B)
     begin
        case (ALUcontrol)
@@ -31,7 +34,15 @@ module ALU(
 		3'b000:  //add
 			 begin 
 			   zero<=0;
-			   ALUResult<=Src_A+Src_B; 
+			   Add_Subtractor_nb  add_sub1(
+			      .X(Src_A),
+				  .Y(Src_B),
+				  .Add_n(0),
+			      .S(ALUcontrol),
+				  .C_OUT(C_out)
+				  .overflow(overflow), 
+				  .lessthan(lessthan)
+			   ); 
 			 end 
 			 
 		3'b001: //sub
@@ -57,9 +68,19 @@ module ALU(
 			    ALUResult<=Src_A&Src_B; 
 			 end
 			  
-		3'b101:
+		3'b101: //SLT
 			 begin 
-				ALUResult<=(Src_A<Src_B)? 1 : 0; 
+			    zero<=0;
+				Add_Subtractor_nb  add_sub2(
+			      .X(Src_A),
+				  .Y(Src_B),
+				  .Add_n(1),
+			      .S(ALUcontrol),
+				  .C_OUT(C_out)
+				  .overflow(overflow), 
+				  .lessthan(lessthan)
+			   ); 
+				ALUResult<=lessthan; 
 			 end 
 			  
 		default: 
