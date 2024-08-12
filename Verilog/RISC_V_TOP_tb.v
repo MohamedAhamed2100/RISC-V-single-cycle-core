@@ -12,7 +12,7 @@ module RISC_V_TOP_tb ();
  
    initial 
      begin 
-        $dumpfile("DUT.vcd");
+        $dumpfile("RISC_V_TOP.vcd");
         $dumpvars;
         CLK   <= 1 ;
         Reset <= 1 ; 
